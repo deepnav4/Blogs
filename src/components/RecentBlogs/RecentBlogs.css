@@ -44,17 +44,38 @@
     align-items: center;
     gap: 1.5rem;
     padding: 0;
+    overflow: hidden;
 }
 
 .blog-card:not(.featured):not(.full-width) .blog-card-top {
-    width: 280px;
-    min-width: 280px;
+    width: 224px;
+    min-width: 224px;
     height: 100%;
     margin: 0;
 }
 
 .blog-card:not(.featured):not(.full-width) .blog-card-bottom {
     padding: 1rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.blog-card:not(.featured):not(.full-width) .blog-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.blog-card:not(.featured):not(.full-width) .blog-detail {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 /* Full width blog (4th blog) */
@@ -192,6 +213,19 @@
     .RecentBlogs {
         padding: 1.5rem;
     }
+
+    .blog-card:not(.featured):not(.full-width) .blog-card-bottom {
+        padding: 0.8rem;
+    }
+
+    .blog-card:not(.featured):not(.full-width) .blog-name {
+        font-size: 15px;
+    }
+
+    .blog-card:not(.featured):not(.full-width) .blog-detail {
+        font-size: 13px;
+        -webkit-line-clamp: 2;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -199,8 +233,8 @@
         gap: 1.5rem;
     }
     .blog-card:not(.featured):not(.full-width) .blog-card-top {
-        width: 260px;
-        min-width: 260px;
+        width: 208px;
+        min-width: 208px;
     }
 }
 
