@@ -11,10 +11,10 @@ export default function BlogContent3() {
         <div className="blog-content-header">
           <span className="blog-date">Sunday, Jan 1, 2023</span>
           <h1>What is Wireframing? A Comprehensive Guide to UX Design Fundamentals</h1>
-          <div className="blog-tags">
-            <button className="blog-btn1">Design</button>
-            <button className="blog-btn2">UX</button>
-            <button className="blog-btn3">Wireframing</button>
+          <div className="blog-btns blog-tags">
+            <button className={`blog-btn${Math.floor(Math.random() * 8) + 1}`}>Design</button>
+            <button className={`blog-btn${Math.floor(Math.random() * 8) + 1}`}>UX</button>
+            <button className={`blog-btn${Math.floor(Math.random() * 8) + 1}`}>Wireframing</button>
           </div>
         </div>
 

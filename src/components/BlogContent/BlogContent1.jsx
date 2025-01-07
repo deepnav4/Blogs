@@ -11,10 +11,10 @@ export default function BlogContent2() {
         <div className="blog-content-header">
             <span className="blog-date">Sunday, Jan 1, 2023</span>
             <h1>Bill Walsh Lessons</h1>
-            <div className="blog-tags">
-            <button className="blog-btn1">Leadership</button>
-            <button className="blog-btn2">Strategy</button>
-            <button className="blog-btn3">Management</button>
+            <div className="blog-btns blog-tags">
+            <button className={`blog-btn${Math.floor(Math.random() * 8) + 1}`}>Leadership</button>
+            <button className={`blog-btn${Math.floor(Math.random() * 8) + 1}`}>Strategy</button>
+            <button className={`blog-btn${Math.floor(Math.random() * 8) + 1}`}>Management</button>
             </div>
         </div>
         <div className="blog-hero-image">

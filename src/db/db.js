@@ -2,6 +2,30 @@ import { blogImages } from '../config/images';
 
 const allblogData = [
     {
+        id: 7,
+        image: blogImages.recentBlogs.blog1,
+        date: "Sunday, Jan 5, 2025",
+        title: "Understanding JWT Authentication",
+        detail: "Learn about JWT (JSON Web Token) authentication, how it works, and best practices for implementing secure user authentication in your applications.",
+        tags: ["Authentication", "Security", "Web Development"]
+    },
+    {
+        id: 8,
+        image: blogImages.recentBlogs.blog2,
+        date: "Friday, Jan 3, 2025",
+        title: "Asynchronous Nature of JavaScript",
+        detail: "JavaScript is a single-threaded language, but it can handle asynchronous operations efficiently. This article explores how JavaScript manages asynchronous tasks and the benefits of using asynchronous programming in web development.",
+        tags: ["JavaScript", "Web Development", "Asynchronous Programming"]
+    },
+    {
+        id: 9,
+        image: blogImages.recentBlogs.blog3,
+        date: "Friday, Dec 31, 2024",
+        title: "HTTP status codes are a crucial part of web",
+        detail: "HTTP status codes are a crucial part of web communication. They provide information about the outcome of an HTTP request and help developers understand the success or failure of a request.",
+        tags: ["API", "HTTP", "Development"]
+    },
+    {
         id: 1,
         image: blogImages.allBlogs.blog5,
         date: "Sunday, Jan 27, 2024",
@@ -49,30 +73,9 @@ const allblogData = [
         detail: "Starting a community doesn't need to be complicated, but how do you get started?",
         tags: ["Design", "Framework", "Presentation"]
     },
-    {
-        id: 7,
-        image: blogImages.recentBlogs.blog1,
-        date: "Sunday, Jan 1, 2023",
-        title: "UX-Review Presentation",
-        detail: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-        tags: ["Design", "Research", "Presentation"]
-    },
-    {
-        id: 8,
-        image: blogImages.recentBlogs.blog2,
-        date: "Sunday, Jan 1, 2023",
-        title: "Migrating to Linear 101",
-        detail: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get...",
-        tags: ["Design", "Research"]
-    },
-    {
-        id: 9,
-        image: blogImages.recentBlogs.blog3,
-        date: "Sunday, Jan 1, 2023",
-        title: "Building your API Stack",
-        detail: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...",
-        tags: ["Design", "Research"]
-    },
+    
+    
+    
     {
         id: 10,
         image: blogImages.recentBlogs.blog4,

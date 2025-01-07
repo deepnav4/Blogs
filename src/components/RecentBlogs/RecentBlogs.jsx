@@ -7,33 +7,31 @@ const recentBlogsData = [
   {
     id: 7,
     image: blogImages.recentBlogs.blog1,
-    date: "Sunday, Jan 1, 2023",
-    title: "UX-Review Presentation",
-    detail: "How do you create compelling presentations that wow your colleagues and impress your managers?\n\
-            \n\
-            Creating a great presentation requires a combination of technical skills, such as knowing how to use presentation software, and creative skills, such as being able to structure a coherent narrative and design visually appealing slides. \n\
-            It also requires practice and experience",
-    tags: ["Design", "Research", "Presentation"],
+    date: "Sunday, Jan 5, 2025",
+    title: "Understanding JWT Authentication",
+    detail: "Learn about JWT (JSON Web Token) authentication, how it works, and best practices for implementing secure user authentication in your applications.",
+    tags: ["Authentication", "Security", "Web Development"],
     featured: true
   },
   {
     id: 8,
     image: blogImages.recentBlogs.blog2,
-    date: "Sunday, Jan 1, 2023",
-    title: "Migrating to Linear 101",
-    detail: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get...",
-    tags: ["Design", "Research"],
+    date: "Friday, Jan 3, 2025",
+    title: "Asynchronous Nature of JavaScript",
+    detail: "JavaScript is a single-threaded language, but it can handle asynchronous operations efficiently. This article explores how JavaScript manages asynchronous tasks and the benefits of using asynchronous programming in web development.",
+    tags: ["JavaScript", "Web Development", "Asynchronous Programming"],
     featured: false
   },
-  {
+    {
     id: 9,
     image: blogImages.recentBlogs.blog3,
-    date: "Sunday, Jan 1, 2023",
-    title: "Building your API Stack",
-    detail: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...",
-    tags: ["Design", "Research"],
+    date: "Tuesday, Dec 31, 2024",
+    title: "Understanding The HTTP Status Codes",
+    detail: "HTTP status codes are a crucial part of web communication. They provide information about the outcome of an HTTP request and help developers understand the success or failure of a request. This article explores the most common HTTP status codes and their meanings.",
+    tags: ["HTTP", "Web Development", "API"],
     featured: false
   },
+
   {
     id: 10,
     image: blogImages.recentBlogs.blog4,
@@ -65,7 +63,7 @@ export default function RecentBlogs() {
               <div className="blog-detail">{blog.detail}</div>
               <div className="blog-btns">
                 {blog.tags.map((tag, index) => (
-                  <button key={index} className={`blog-btn${index + 1}`}>{tag}</button>
+                  <button key={index} className={`blog-btn${Math.floor(Math.random() * 8) + 1}`}>{tag}</button>
                 ))}
               </div>
             </div>

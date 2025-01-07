@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 100%;
     max-width: 1216px;
 }
@@ -41,7 +41,7 @@
 .blog-card:not(.featured):not(.full-width) {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center;    
     gap: 1.5rem;
     padding: 0;
     overflow: hidden;
@@ -165,47 +165,65 @@
 }
 
 .blog-btns button:hover {
-    opacity: 0.8;
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .blog-btn1 {
-    color: #3538CD;
-    background-color: #3538cd2f;
+    color: #ffffff98;
+    background-color: #4362ee36; 
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .blog-btn2 {
-    color: #6941C6;
-    background-color: #6941c642;
+    color: #ffffffc1; 
+    background-color: #7109b72f;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .blog-btn3 {
-    color: #C11574;
-    background-color: #c115741f;
+    color: #ffffffb8;
+    background-color: #f7258454;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .blog-btn4 {
-    color: #4169e1;
-    background-color: #4169e117;
+    color: #ffffffb8;
+    background-color: #3a85ff55;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .blog-btn5 {
-    color: #F8E231;
-    background-color: rgba(193, 21, 116, 0.203);
+    color: #ffffffb8;
+    background-color: #fb54076c;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .blog-btn6 {
-    color: #1A1D23;
-    background-color: #1a1d232c;
+    color: #ffffffb8;
+    background-color: #2b2d426c;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .blog-btn7 {
-    color: #008000;
-    background-color: #00800022;
+    color: #ffffffb8;
+    background-color: #2a9d8f6c;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .blog-btn8 {
-    color: #7a288a;
-    background-color: rgba(193, 21, 116, 0.08);
+    color: #ffffffb8;
+    background-color: #8338ec6c;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
