@@ -100,7 +100,7 @@ export default function BlogContent8() {
         </article>
       </div>
 
-      <aside className="blog-sidebar" data-aos="fade-left" data-aos-delay="200">
+      <aside className="blog-sidebar" data-aos="fade-left">
         <h3>More Articles</h3>
         <div className="sidebar-blogs">
           {allblogData.map((blog) => (
