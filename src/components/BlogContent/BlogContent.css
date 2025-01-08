@@ -284,9 +284,9 @@
       padding: 90px 20px 32px;
     }
     
-    .blog-sidebar {
+    /* .blog-sidebar {
       display: none; /* Hide sidebar on mobile */
-    }
+    /* } */ 
     
     .blog-content-header h1 {
       font-size: 28px;
@@ -315,6 +315,29 @@
     .sidebar-blog-info h4 {
         font-size: 14px;
         -webkit-line-clamp: 2;
+    }
+    
+    .blog-content p,
+    .blog-content li {
+      font-size: 14px; /* reduced by 2px for mobile */
+    }
+    
+    .blog-content h2 {
+      font-size: 20px;
+    }
+    
+    .blog-content h3 {
+      font-size: 18px;
+    }
+
+    .blog-content-container {
+      flex-direction: column;
+    }
+
+    .blog-sidebar {
+      width: 100%;
+      margin-top: 2rem;
+      position: static; /* removes any fixed positioning */
     }
   }
   
