@@ -376,3 +376,13 @@
   /* .blog-detail .blog-sidebar {
     display: none;
   } */
+
+.sidebar-blog-card.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid bisque;
+    pointer-events: none;  /* Prevents clicking on current blog */
+}
+
+.sidebar-blog-card.active .sidebar-blog-info h4 {
+    color: bisque;
+}

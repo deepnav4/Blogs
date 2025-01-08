@@ -5,9 +5,16 @@ import { allblogData } from '../../db/db'
 import { Link } from 'react-router-dom'
 
 export default function BlogContent7() {
+  const currentBlogId = 7;
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   return (
     <div className="blog-content-container">
-      <div className="blog-content-main">
+      <div className="blog-content-main" data-aos="fade-up">
         <div className="blog-content-header">
           <span className="blog-date">Sunday, Jan 6, 2025</span>
           <h1>Understanding JWT Authentication</h1>
@@ -137,12 +144,16 @@ export default function BlogContent7() {
         </article>
       </div>
 
-      <aside className="blog-sidebar">
+      <aside className="blog-sidebar" data-aos="fade-left" data-aos-delay="200">
         <h3>More Articles</h3>
         <div className="sidebar-blogs">
           {allblogData.map((blog) => (
-            <Link to={`/Blogs/blog/${blog.id}`}> 
-            <div key={blog.id} className="sidebar-blog-card">
+            <Link 
+            to={`/Blogs/blog/${blog.id}`} 
+            key={blog.id}
+            onClick={scrollToTop}
+          >
+            <div className={`sidebar-blog-card ${blog.id === currentBlogId ? 'active' : ''}`}>
               <img src={blog.image} alt={blog.title} />
               <div className="sidebar-blog-info">
                 <span className="blog-date">{blog.date}</span>

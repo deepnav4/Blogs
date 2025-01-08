@@ -5,9 +5,16 @@ import { allblogData } from '../../db/db'
 import { Link } from 'react-router-dom'
 
 export default function BlogContent10() {
+  const currentBlogId = 10;
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   return (
     <div className="blog-content-container">
-      <div className="blog-content-main">
+      <div className="blog-content-main" data-aos="fade-up">
         <div className="blog-content-header">
           <span className="blog-date">Sunday, Jan 1, 2023</span>
           <h1>Grid Systems: The Foundation of Modern Interface Design</h1>
@@ -22,7 +29,7 @@ export default function BlogContent10() {
           <img src={blogImage} alt="Grid System Design" />
         </div>
 
-        <article className="blog-content">
+        <article className="blog-content" >
           <p>Grid systems have been the backbone of design for centuries, from ancient manuscripts to modern digital interfaces. In today's digital landscape, understanding and implementing effective grid systems is crucial for creating cohesive, balanced, and user-friendly designs. Let's explore how grid systems can elevate your interface design to the next level.</p>
 
           <h2>The Evolution of Grid Systems</h2>
@@ -60,12 +67,16 @@ export default function BlogContent10() {
         </article>
       </div>
 
-      <aside className="blog-sidebar">
+      <aside className="blog-sidebar" data-aos="fade-left" data-aos-delay="200">
         <h3>More Articles</h3>
         <div className="sidebar-blogs">
           {allblogData.map((blog) => (
-            <Link to={`/Blogs/blog/${blog.id}`}>
-            <div key={blog.id} className="sidebar-blog-card">
+            <Link 
+            to={`/Blogs/blog/${blog.id}`} 
+            key={blog.id}
+            onClick={scrollToTop}
+          >
+            <div key={blog.id} className={`sidebar-blog-card ${blog.id === currentBlogId ? 'active' : ''}`}>
               <img src={blog.image} alt={blog.title} />
               <div className="sidebar-blog-info">
                 <span className="blog-date">{blog.date}</span>

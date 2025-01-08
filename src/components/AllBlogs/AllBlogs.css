@@ -7,6 +7,12 @@
     align-items: center;
 }
 
+.all-blogs-cont2-card:hover {
+    .blog-card-top img{
+        transform: scale(1.05);
+    }
+}
+
 .all-blogs-cont1 {
     font-size: 2rem;
     margin-bottom: 2rem;

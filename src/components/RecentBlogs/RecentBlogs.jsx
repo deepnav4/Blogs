@@ -46,7 +46,8 @@ const recentBlogsData = [
 
 export default function RecentBlogs() {
   return (
-    <div className='RecentBlogs'>
+    <div className='RecentBlogs'  data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
       <div className="recent-blogs-grid">
         {recentBlogsData.map((blog) => (
           <Link 

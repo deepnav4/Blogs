@@ -61,10 +61,11 @@ const blogData = [
 
 // Blog Card Component
 const BlogCard = ({ blog }) => (
-    <div className="all-blogs-cont2-card">
+    <div className="all-blogs-cont2-card"  data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div className="blog-card-top">
         <Link to={`/Blogs/blog/${blog.id}`}>
-        <img src={blog.image} alt={blog.title} />
+            <img src={blog.image} alt={blog.title} />
         </Link>
         </div>
         <div className="blog-card-bottom">

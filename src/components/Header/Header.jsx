@@ -36,7 +36,7 @@ export default function Header() {
         </NavLink>
       </div>
       
-      <div className="hamburger" onClick={toggleMenu}>
+      <div className={`hamburger ${isMenuOpen ? 'menu-open' : ''}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
@@ -45,9 +45,10 @@ export default function Header() {
       <div className={`header-div2 ${isMenuOpen ? 'menu-open' : ''}`}>
         <div className="header-div2-links">
           <NavLink 
-            to="/Blogs" 
+            to="/Blogs/" 
             onClick={closeMenu}
-            className={({ isActive }) => isActive ? 'active' : ''}
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            end
           >
             Blogs
           </NavLink>

@@ -13,8 +13,19 @@ import BlogDetail7 from './pages/BlogDetail7'
 import BlogDetail8 from './pages/BlogDetail8'
 import BlogDetail9 from './pages/BlogDetail9'
 import BlogDetail10 from './pages/BlogDetail10'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Animation duration in milliseconds
+      once: true,      // Whether animation should happen only once
+      easing: 'ease',  // Animation timing function
+    });
+  }, []);
+
   return (
     <div>
       <BrowserRouter>
